@@ -1,0 +1,11 @@
+create an empty stack of integer;
+while there remains a token
+    get the next token;
+    if the token is an operand
+        push the operand on the stack;
+    else if the token is an operator
+        pop the right operand off the stack;
+        pop the left operand off the stack;
+        evaluate the operation;
+        push the result onto the stack;
+pop the stack and return the result;
